@@ -51,7 +51,7 @@ function maxOf(myNums) {
 
 
 function includesNumber(myNums, element) {
-    if (myNums.length > 1) {
+    if (myNums.length >= 1) {
         if (myNums[0] === element) {
             return true
         } else {
@@ -61,3 +61,5 @@ function includesNumber(myNums, element) {
         return false
     }
 }
+
+console.log(includesNumber([1, 2, 3, 4], 4))
